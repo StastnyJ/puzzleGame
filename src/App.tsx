@@ -35,19 +35,21 @@ export default function App() {
     fetch("https://erecept.lekarnaselska.cz/stringSharer/api.php?key=puzzleGame" + loggedTeam)
       .then((res) =>
         res.json().then((data: PuzzleProgress[]) => {
-          setProgress(
-            data.map((d) => {
-              return {
-                ...d,
-                openedIn: new Date(d.openedIn),
-                solvedIn: new Date(d.solvedIn),
-              };
-            })
-          );
+          if (data && data.length > 0)
+            setProgress(
+              data.map((d) => {
+                return {
+                  ...d,
+                  openedIn: new Date(d.openedIn),
+                  solvedIn: new Date(d.solvedIn),
+                };
+              })
+            );
+          else setProgress([]);
           setLoaded(true);
         })
       )
-      .catch((e) => error("Při ukládání došlo k chybě, prosím obnovte stránku a zkuste to znova."));
+      .catch((e) => error("Při načítání dat došlo k chybě, prosím obnovte stránku a zkuste to znova."));
   }, [loggedTeam]);
 
   const saveProgress = (newProgress: PuzzleProgress[]) => {
@@ -55,7 +57,10 @@ export default function App() {
       fetch("https://erecept.lekarnaselska.cz/stringSharer/api.php?key=puzzleGame" + loggedTeam, {
         method: "POST",
         body: JSON.stringify(newProgress),
-      }).catch((e) => error("Při ukládání došlo k chybě, prosím obnovte stránku a zkuste to znova."));
+      }).catch((e) => {
+        error("Při ukládání došlo k chybě, prosím obnovte stránku a zkuste to znova.");
+        console.log(e);
+      });
     }
     setProgress(newProgress);
   };
