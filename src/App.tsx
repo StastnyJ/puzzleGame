@@ -49,7 +49,10 @@ export default function App() {
           setLoaded(true);
         })
       )
-      .catch((e) => error("Při načítání dat došlo k chybě, prosím obnovte stránku a zkuste to znova."));
+      .catch((e) => {
+        error("Při ukládání došlo k chybě, prosím obnovte stránku a zkuste to znova.");
+        console.log(e);
+      });
   }, [loggedTeam]);
 
   const saveProgress = (newProgress: PuzzleProgress[]) => {
@@ -80,6 +83,7 @@ export default function App() {
     if (teamName in teams && teams[teamName as never] === password) {
       setLoggedTeam(teamName);
       localStorage.setItem("pgLoggedTeamName", teamName);
+      saveProgress([]);
       success("Přihlášení bylo úspěšné");
     } else {
       error("Neexistující tým či špatné heslo");
