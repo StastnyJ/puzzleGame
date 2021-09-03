@@ -32,27 +32,31 @@ export default function App() {
   const [currentPwd, setCurrentPwd] = useState("");
 
   useEffect(() => {
-    fetch("https://erecept.lekarnaselska.cz/stringSharer/api.php?key=puzzleGame" + loggedTeam)
-      .then((res) =>
-        res.json().then((data: PuzzleProgress[]) => {
-          if (data && data.length > 0)
-            setProgress(
-              data.map((d) => {
-                return {
-                  ...d,
-                  openedIn: new Date(d.openedIn),
-                  solvedIn: new Date(d.solvedIn),
-                };
-              })
-            );
-          else setProgress([]);
-          setLoaded(true);
-        })
-      )
-      .catch((e) => {
-        error("Při ukládání došlo k chybě, prosím obnovte stránku a zkuste to znova.");
-        console.log(e);
-      });
+    loggedTeam.length > 0 &&
+      fetch("https://erecept.lekarnaselska.cz/stringSharer/api.php?key=puzzleGame" + loggedTeam)
+        .then((res) =>
+          res
+            .json()
+            .then((data: PuzzleProgress[]) => {
+              if (data && data.length > 0)
+                setProgress(
+                  data.map((d) => {
+                    return {
+                      ...d,
+                      openedIn: new Date(d.openedIn),
+                      solvedIn: new Date(d.solvedIn),
+                    };
+                  })
+                );
+              else setProgress([]);
+              setLoaded(true);
+            })
+            .catch(() => setProgress([]))
+        )
+        .catch((e) => {
+          error("Při ukládání došlo k chybě, prosím obnovte stránku a zkuste to znova.");
+          console.log(e);
+        });
   }, [loggedTeam]);
 
   const saveProgress = (newProgress: PuzzleProgress[]) => {
@@ -83,7 +87,6 @@ export default function App() {
     if (teamName in teams && teams[teamName as never] === password) {
       setLoggedTeam(teamName);
       localStorage.setItem("pgLoggedTeamName", teamName);
-      saveProgress([]);
       success("Přihlášení bylo úspěšné");
     } else {
       error("Neexistující tým či špatné heslo");
@@ -110,8 +113,6 @@ export default function App() {
   };
 
   const isHintAvailable = (hintId: number) => hintAvailableFrom(hintId).getTime() <= new Date().getTime();
-
-  console.log(progress);
 
   return (
     <div className={classes.root}>
