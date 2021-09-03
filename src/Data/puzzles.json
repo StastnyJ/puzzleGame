@@ -1,0 +1,161 @@
+[
+  {
+    "positionLocation": {
+      "type": "text",
+      "value": "Další stanoviště naleznete na Hřbitově (TODO - better specification)"
+    },
+    "puzzleCode": "legosaurus",
+    "puzzlePassword": "leknin",
+    "hints": [
+      {
+        "availableAfter": 20,
+        "type": "text",
+        "value": "Běžte se podívat na objekt"
+      },
+      {
+        "availableAfter": 60,
+        "type": "text",
+        "value": "Heslo je leknin"
+      }
+    ],
+    "workingName": "Vlajky"
+  },
+  {
+    "positionLocation": {
+      "type": "text",
+      "value": "TODO: Place specification"
+    },
+    "puzzleCode": "TODO",
+    "puzzlePassword": "TODO",
+    "hints": [
+      {
+        "availableAfter": 60,
+        "type": "text",
+        "value": "Heslo je TODO"
+      }
+    ],
+    "workingName": "Elektro"
+  },
+  {
+    "positionLocation": {
+      "type": "text",
+      "value": "TODO: Place specification"
+    },
+    "puzzleCode": "legoryt",
+    "puzzlePassword": "motyka",
+    "hints": [
+      {
+        "availableAfter": 16,
+        "type": "text",
+        "value": "Máte opravdu všechny věci z obálky, které potřebujete?"
+      },
+      {
+        "availableAfter": 32,
+        "type": "image",
+        "value": "/img/xxx.png"
+      },
+      {
+        "availableAfter": 60,
+        "type": "text",
+        "value": "Heslo je motyka"
+      }
+    ],
+    "workingName": "Memes"
+  },
+  {
+    "positionLocation": {
+      "type": "text",
+      "value": "TODO: Place specification"
+    },
+    "puzzleCode": "legrace",
+    "puzzlePassword": "leto",
+    "hints": [
+      {
+        "availableAfter": 60,
+        "type": "text",
+        "value": "Heslo je leto"
+      }
+    ],
+    "workingName": "Lego"
+  },
+  {
+    "positionLocation": {
+      "type": "text",
+      "value": "TODO: Place specification"
+    },
+    "puzzleCode": "legoista",
+    "puzzlePassword": "jachta",
+    "hints": [
+      {
+        "availableAfter": 60,
+        "type": "text",
+        "value": "Heslo je jachta"
+      }
+    ],
+    "workingName": "Pípací"
+  },
+  {
+    "positionLocation": {
+      "type": "text",
+      "value": "TODO: Place specification"
+    },
+    "puzzleCode": "legalyza",
+    "puzzlePassword": "sekta",
+    "hints": [
+      {
+        "availableAfter": 60,
+        "type": "text",
+        "value": "Heslo je sekta"
+      }
+    ],
+    "workingName": "Únos"
+  },
+  {
+    "positionLocation": {
+      "type": "text",
+      "value": "TODO: Place specification"
+    },
+    "puzzleCode": "legondarni",
+    "puzzlePassword": "kolobezka",
+    "hints": [
+      {
+        "availableAfter": 60,
+        "type": "text",
+        "value": "Heslo je kolobezka"
+      }
+    ],
+    "workingName": "Fake Tmou"
+  },
+  {
+    "positionLocation": {
+      "type": "text",
+      "value": "TODO: Place specification"
+    },
+    "puzzleCode": "legoslativa",
+    "puzzlePassword": "ampule",
+    "hints": [
+      {
+        "availableAfter": 60,
+        "type": "text",
+        "value": "Heslo je ampule"
+      }
+    ],
+    "workingName": "Panáčci"
+  },
+  {
+    "positionLocation": {
+      "type": "text",
+      "value": "TODO: Place specification"
+    },
+    "puzzleCode": "logomotiva",
+    "puzzlePassword": "jogurt",
+    "hints": [
+      {
+        "availableAfter": 60,
+        "type": "text",
+        "value": "Heslo je jogurt"
+      }
+    ],
+    "workingName": "Jezero"
+  }
+]
