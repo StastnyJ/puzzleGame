@@ -117,7 +117,7 @@ export default function App() {
 
   return (
     <div className={classes.root}>
-      <Button onClick={() => saveProgress([])}>RESET (REMOVE AFTER DEBUG)</Button>
+      {/* <Button onClick={() => saveProgress([])}>RESET (REMOVE AFTER DEBUG)</Button> */}
       {loggedTeam === "" ? (
         <>
           <LoginForm login={login} />
