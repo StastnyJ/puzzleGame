@@ -14,9 +14,11 @@ export const notify = (content: string) => {
 };
 
 export const notifyComing = (team: string, puzzleName: string, puzzleNumber: number) => {
-  notify(`[${new Date().toLocaleTimeString()}] Tým **${team}** dorazil na stanoviště č. ${puzzleNumber}: **${puzzleName}**`);
+  notify(
+    `[${new Date().toLocaleTimeString()}] Tým **${team}** dorazil na stanoviště č. ${puzzleNumber + 1}: **${puzzleName}**`
+  );
 };
 
 export const notifySolved = (team: string, puzzleName: string, puzzleNumber: number) => {
-  notify(`[${new Date().toLocaleTimeString()}] Tým **${team}** vyřešil šifru č. ${puzzleNumber}: **${puzzleName}**`);
+  notify(`[${new Date().toLocaleTimeString()}] Tým **${team}** vyřešil šifru č. ${puzzleNumber + 1}: **${puzzleName}**`);
 };

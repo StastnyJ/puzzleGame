@@ -7,6 +7,7 @@ import LoginForm from "./Components/LoginForm";
 import { PuzzleProgress } from "./Types/types.d";
 import { emptyPuzzleProgress, getCurrentPuzzleIndex } from "./Utils/progressUtils";
 import { notifyComing, notifySolved } from "./Utils/notifications";
+import Footer from "./Components/Footer";
 
 const useStyles = makeStyles((theme: Theme) =>
   createStyles({
@@ -116,7 +117,7 @@ export default function App() {
 
   return (
     <div className={classes.root}>
-      {/* <Button onClick={() => saveProgress([])}>RESET (REMOVE AFTER DEBUG)</Button> */}
+      <Button onClick={() => saveProgress([])}>RESET (REMOVE AFTER DEBUG)</Button>
       {loggedTeam === "" ? (
         <>
           <LoginForm login={login} />
@@ -234,6 +235,7 @@ export default function App() {
           {alertText}
         </Alert>
       </Snackbar>
+      <Footer />
     </div>
   );
 }

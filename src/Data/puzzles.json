@@ -8,9 +8,9 @@
     "puzzlePassword": "leknin",
     "hints": [
       {
-        "availableAfter": 20,
+        "availableAfter": 15,
         "type": "text",
-        "value": "Běžte se podívat na objekt"
+        "value": "Jako bychom ty znaky obcí už někde viděli… a který je nejhezčí?"
       },
       {
         "availableAfter": 60,
@@ -23,15 +23,25 @@
   {
     "positionLocation": {
       "type": "text",
-      "value": "TODO: Place specification"
+      "value": "Běžte po modré, dokud nenarazíte na jeskni s podezřele vypadajícím člověkem."
     },
-    "puzzleCode": "TODO",
-    "puzzlePassword": "TODO",
+    "puzzleCode": "legonaut",
+    "puzzlePassword": "asie",
     "hints": [
+      {
+        "availableAfter": 10,
+        "type": "image",
+        "value": "/img/hintCalegories.png"
+      },
+      {
+        "availableAfter": 23,
+        "type": "text",
+        "value": "de LEGO vat = 23"
+      },
       {
         "availableAfter": 60,
         "type": "text",
-        "value": "Heslo je TODO"
+        "value": "Heslo je asie"
       }
     ],
     "workingName": "Elektro"
@@ -52,7 +62,7 @@
       {
         "availableAfter": 32,
         "type": "image",
-        "value": "/img/xxx.png"
+        "value": "/img/memeHint.png"
       },
       {
         "availableAfter": 60,
@@ -71,6 +81,11 @@
     "puzzlePassword": "leto",
     "hints": [
       {
+        "availableAfter": 20,
+        "type": "text",
+        "value": "Oindexujte si mřížku nahoře písmeny a na boku čísly a užijte si skládání LEGA podle návodu"
+      },
+      {
         "availableAfter": 60,
         "type": "text",
         "value": "Heslo je leto"
@@ -86,6 +101,21 @@
     "puzzleCode": "legoista",
     "puzzlePassword": "jachta",
     "hints": [
+      {
+        "availableAfter": 12,
+        "type": "text",
+        "value": ".... . ... .-.. ---"
+      },
+      {
+        "availableAfter": 24,
+        "type": "text",
+        "value": "Vše musí svítit"
+      },
+      {
+        "availableAfter": 36,
+        "type": "text",
+        "value": "Jaký máte čas?"
+      },
       {
         "availableAfter": 60,
         "type": "text",
@@ -103,6 +133,11 @@
     "puzzlePassword": "sekta",
     "hints": [
       {
+        "availableAfter": 32,
+        "type": "image",
+        "value": "/img/rainbowHelp.png"
+      },
+      {
         "availableAfter": 60,
         "type": "text",
         "value": "Heslo je sekta"
@@ -118,6 +153,11 @@
     "puzzleCode": "legondarni",
     "puzzlePassword": "kolobezka",
     "hints": [
+      {
+        "availableAfter": 30,
+        "type": "text",
+        "value": " bezhona = bez + hon + a = s + lov + a = slova"
+      },
       {
         "availableAfter": 60,
         "type": "text",
@@ -135,6 +175,11 @@
     "puzzlePassword": "ampule",
     "hints": [
       {
+        "availableAfter": 15,
+        "type": "image",
+        "value": "/img/hintXXX.png"
+      },
+      {
         "availableAfter": 60,
         "type": "text",
         "value": "Heslo je ampule"
@@ -151,7 +196,7 @@
     "puzzlePassword": "jogurt",
     "hints": [
       {
-        "availableAfter": 60,
+        "availableAfter": 360,
         "type": "text",
         "value": "Heslo je jogurt"
       }
