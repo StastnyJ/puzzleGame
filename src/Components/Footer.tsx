@@ -9,6 +9,8 @@ export default function Footer() {
         <p>Nouzové kontaky: </p> <b>+420 605 193 116</b> (Kuba)
         <br />
         <b>+420 737 788 503</b> (Barča)
+        <br />
+        Version 2
       </div>
     </>
   );
