@@ -52,7 +52,7 @@ export default function App() {
               else setProgress([]);
               setLoaded(true);
             })
-            .catch(() => setProgress([]))
+            .catch(() => {})
         )
         .catch((e) => {
           error("Při ukládání došlo k chybě, prosím obnovte stránku a zkuste to znova.");
