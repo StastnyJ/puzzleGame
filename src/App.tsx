@@ -27,6 +27,7 @@ export default function App() {
   const [alertSeverity, setAlertSeverity] = useState<Color>("success");
   const [alertText, setAlertText] = useState("");
   const [progress, setProgress] = useState<PuzzleProgress[]>([]);
+  // eslint-disable-next-line
   const [loaded, setLoaded] = useState(false);
 
   const [currentCode, setCurrentCode] = useState("");
@@ -61,7 +62,7 @@ export default function App() {
   }, [loggedTeam]);
 
   const saveProgress = (newProgress: PuzzleProgress[]) => {
-    if (loaded) {
+    if (newProgress.length > 0) {
       fetch("https://erecept.lekarnaselska.cz/stringSharer/api.php?key=puzzleGame" + loggedTeam, {
         method: "POST",
         body: JSON.stringify(newProgress),
