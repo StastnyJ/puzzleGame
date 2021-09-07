@@ -62,7 +62,7 @@ export default function App() {
   }, [loggedTeam]);
 
   const saveProgress = (newProgress: PuzzleProgress[]) => {
-    if (newProgress.length > 0) {
+    if (newProgress.length > 0 && (newProgress.length !== 1 || newProgress[0].opened)) {
       fetch("https://erecept.lekarnaselska.cz/stringSharer/api.php?key=puzzleGame" + loggedTeam, {
         method: "POST",
         body: JSON.stringify(newProgress),
