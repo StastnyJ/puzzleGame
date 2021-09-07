@@ -2,7 +2,7 @@
   {
     "positionLocation": {
       "type": "text",
-      "value": "Další stanoviště naleznete na Hřbitově (TODO - better specification)"
+      "value": "Další stanoviště naleznete u zdi hřbitova, po levé straně kostela."
     },
     "puzzleCode": "legosaurus",
     "puzzlePassword": "leknin",
@@ -49,7 +49,7 @@
   {
     "positionLocation": {
       "type": "text",
-      "value": "TODO: Place specification"
+      "value": "Rozcestí na cyklostezsce nad fotbalovým hřištěm, pod stromečkem vedle křížku."
     },
     "puzzleCode": "legoryt",
     "puzzlePassword": "motyka",
@@ -75,7 +75,7 @@
   {
     "positionLocation": {
       "type": "text",
-      "value": "TODO: Place specification"
+      "value": "Levé zábradlí u požární nádrže."
     },
     "puzzleCode": "legrace",
     "puzzlePassword": "leto",
@@ -96,7 +96,7 @@
   {
     "positionLocation": {
       "type": "text",
-      "value": "TODO: Place specification"
+      "value": "Pokračujte rovně (po nejlevější cestičce) dokud nenarazíte na větší lesní cestu. Dále hledejte podle signálu wifi."
     },
     "puzzleCode": "legoista",
     "puzzlePassword": "jachta",
@@ -107,12 +107,17 @@
         "value": ".... . ... .-.. ---"
       },
       {
-        "availableAfter": 24,
+        "availableAfter": 20,
+        "type": "text",
+        "value": "Pokud stále nemáte heslo na wifi, napište na zprávu na číslo +420 605 193 116 ve tvaru HESLO: <čílo vaší krabičky>"
+      },
+      {
+        "availableAfter": 36,
         "type": "text",
         "value": "Vše musí svítit"
       },
       {
-        "availableAfter": 36,
+        "availableAfter": 48,
         "type": "text",
         "value": "Jaký máte čas?"
       },
@@ -127,7 +132,7 @@
   {
     "positionLocation": {
       "type": "text",
-      "value": "TODO: Place specification"
+      "value": "Odpočívadlo v zatáčce, kousek od zastávky autobusu."
     },
     "puzzleCode": "legalyza",
     "puzzlePassword": "sekta",
@@ -148,7 +153,7 @@
   {
     "positionLocation": {
       "type": "text",
-      "value": "TODO: Place specification"
+      "value": "Rozdvojený strom asi 10 metrů před cedulí Bedřichov."
     },
     "puzzleCode": "legondarni",
     "puzzlePassword": "kolobezka",
@@ -169,7 +174,7 @@
   {
     "positionLocation": {
       "type": "text",
-      "value": "TODO: Place specification"
+      "value": "Za odpadkovým košem na autobusové zastávce Bedřichov."
     },
     "puzzleCode": "legoslativa",
     "puzzlePassword": "ampule",
@@ -189,8 +194,8 @@
   },
   {
     "positionLocation": {
-      "type": "text",
-      "value": "TODO: Place specification"
+      "type": "image",
+      "value": "/img/positionGGG.jpg"
     },
     "puzzleCode": "logomotiva",
     "puzzlePassword": "jogurt",
