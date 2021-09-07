@@ -39,7 +39,7 @@ export default function App() {
           res
             .json()
             .then((data: PuzzleProgress[]) => {
-              if (data && data.length > 0)
+              if (data !== null && data.length > 0)
                 setProgress(
                   data.map((d) => {
                     return {
